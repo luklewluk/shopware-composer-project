@@ -1,0 +1,34 @@
+{
+    "name": "luklewluk/shopware-composer-project",
+    "description": "Composer Shopware project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lukasz Lewandowski",
+            "email": "luklewluk@gpmd.co.uk"
+        }
+    ],
+    "require": {
+        "shopware/shopware": "~5.0",
+        "luklewluk/shopware-composer-bridge": "dev-master",
+        "slowprog/composer-copy-file": "^0.2"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "SlowProg\\CopyFile\\ScriptHandler::copy"
+        ]
+    },
+    "extra": {
+        "copy-file": {
+            "vendor/shopware/shopware/bin/": "bin/",
+            "vendor/shopware/shopware/custom/": "custom/",
+            "vendor/shopware/shopware/files/": "files/",
+            "vendor/shopware/shopware/media/": "media/",
+            "vendor/shopware/shopware/var/": "var/",
+            "vendor/shopware/shopware/web/": "web/",
+            "vendor/shopware/shopware/autoload.php": "./",
+            "vendor/luklewluk/shopware-composer-bridge/shopware.php": "./"
+        }
+    }
+}
