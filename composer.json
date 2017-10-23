@@ -1,17 +1,17 @@
 {
     "name": "luklewluk/shopware-composer-project",
-    "description": "Composer Shopware project",
+    "description": "Shopware composer project skeleton",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
             "name": "Lukasz Lewandowski",
-            "email": "luklewluk@gpmd.co.uk"
+            "email": "luklewluk@gmail.com"
         }
     ],
     "require": {
         "shopware/shopware": "~5.0",
-        "luklewluk/shopware-composer-bridge": "dev-master",
+        "luklewluk/shopware-composer-bridge": "~0.1",
         "slowprog/composer-copy-file": "^0.2"
     },
     "scripts": {
