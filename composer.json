@@ -11,22 +11,23 @@
     ],
     "require": {
         "shopware/shopware": "~5.0",
-        "luklewluk/shopware-composer-bridge": "~0.1",
+        "luklewluk/shopware-composer-bridge": "~0.2",
         "slowprog/composer-copy-file": "^0.2"
     },
     "scripts": {
         "post-create-project-cmd": [
             "SlowProg\\CopyFile\\ScriptHandler::copy"
+        ],
+        "post-update-cmd": [
+            "SlowProg\\CopyFile\\ScriptHandler::copy"
+        ],
+        "post-install-cmd": [
+            "SlowProg\\CopyFile\\ScriptHandler::copy"
         ]
     },
     "extra": {
         "copy-file": {
-            "vendor/shopware/shopware/bin/": "bin/",
-            "vendor/shopware/shopware/custom/": "custom/",
-            "vendor/shopware/shopware/files/": "files/",
-            "vendor/shopware/shopware/media/": "media/",
-            "vendor/shopware/shopware/var/": "var/",
-            "vendor/shopware/shopware/web/": "web/",
+            "vendor/shopware/shopware/bin/console": "bin/console",
             "vendor/shopware/shopware/autoload.php": "./",
             "vendor/luklewluk/shopware-composer-bridge/shopware.php": "./"
         }

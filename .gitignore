@@ -1,2 +1,7 @@
 vendor/
 .idea/
+
+# Files copied in by composer
+bin/console
+autoload.php
+shopware.php
