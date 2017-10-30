@@ -51,7 +51,7 @@ Example:
 ## TODO
 List might be not completed.
 
-- move cache folders to the root directory
+- move frontend cache `web/cache` to the root directory
 - allow to create custom templates
 - move files from `files` folder to the root directory
 - update `.gitignore`

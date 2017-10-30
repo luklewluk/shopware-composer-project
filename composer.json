@@ -11,7 +11,7 @@
     ],
     "require": {
         "shopware/shopware": "~5.0",
-        "luklewluk/shopware-composer-bridge": "~0.2",
+        "luklewluk/shopware-composer-bridge": "~0.3",
         "slowprog/composer-copy-file": "^0.2"
     },
     "scripts": {
