@@ -32,7 +32,7 @@ In following locations
 
 `location ~* "^/web/cache/(?:[0-9]{10})_(?:.+)\.(?:js|css)$"`
 
-add:
+Replace `try_files` with:
 ```
 try_files $uri /vendor/shopware/shopware/$uri;
 ```
@@ -48,10 +48,17 @@ Example:
         }
 ```
 
-## TODO
-List might be not completed.
+## Plugins
 
+Plugins can be installed using the Shopware way (coping files to the directories and by the backend) or using
+composer if plugin uses [Composer Installers](https://github.com/composer/installers).
+
+## TODO
+List may be not completed.
+
+- allow to create custom templates (it already works by custom plugins but needs more tests)
 - move frontend cache `web/cache` to the root directory
-- allow to create custom templates
-- move files from `files` folder to the root directory
+- move `files` and `media` folders to the root directory
+- installation by composer scripts
 - update `.gitignore`
+- build tests
