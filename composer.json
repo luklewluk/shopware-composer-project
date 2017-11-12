@@ -11,7 +11,7 @@
     ],
     "require": {
         "shopware/shopware": "~5.0",
-        "luklewluk/shopware-composer-bridge": "~0.3",
+        "luklewluk/shopware-composer-bridge": "~0.4",
         "slowprog/composer-copy-file": "^0.2"
     },
     "scripts": {
@@ -27,8 +27,8 @@
     },
     "extra": {
         "copy-file": {
-            "vendor/shopware/shopware/bin/console": "bin/console",
-            "vendor/shopware/shopware/autoload.php": "./",
+            "vendor/luklewluk/shopware-composer-bridge/bin/console": "bin/console",
+            "vendor/luklewluk/shopware-composer-bridge/autoload.php": "./",
             "vendor/luklewluk/shopware-composer-bridge/shopware.php": "./"
         }
     }
